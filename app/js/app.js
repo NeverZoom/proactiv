@@ -101,4 +101,38 @@ document.addEventListener('DOMContentLoaded', () => {
 		$('.mobile__nav').removeClass('mnu-active');
 	});
 
+	//E-mail Ajax Send
+	$("form.mainform").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "/mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			$(th).find('.success').addClass('active').css('display', 'flex').hide().fadeIn();
+			setTimeout(function() {
+				$(th).find('.success').removeClass('active').fadeOut();
+				th.trigger("reset");
+			}, 5000);
+		});
+		return false;
+	});
+
+	//E-mail Ajax Send
+	$("form.recall").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "/mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			$(th).find('.success').addClass('active').css('display', 'flex').hide().fadeIn();
+			setTimeout(function() {
+				$(th).find('.success').removeClass('active').fadeOut();
+				th.trigger("reset");
+			}, 5000);
+		});
+		return false;
+	});
+
 })

@@ -216,11 +216,15 @@
       </div>
       <div class="col-lg-1"></div>
       <div class="col-lg-4">
-        <form action="">
+        <form action="" class="recall">
           <input type="text" required placeholder="Ваше имя">
-          <input type="phone" required placeholder="Ваш телефон">
+          <input type="phone" required placeholder="Ваш телефон" pattern="[0-9]{11}">
           <button class="button accent">Отправить</button>
           <span>Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности.</span>
+
+          <input type="hidden" value="ПроАктив" name="project_name">
+          <input type="hidden" value="mail@mail.ru" name="admin_email">
+          <input type="hidden" value="тема письма" name="form_subject">
         </form>
       </div>
       <div class="col-lg-7">
@@ -519,7 +523,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <form action="">
+          <form action="" class="mainform">
 
             <div class="wrapper radio">
               <h3>Какую организационно-правовую форму имеет Ваша деятельность?</h3>
@@ -577,13 +581,17 @@
             <div class="wrapper">
               <h3>Контактные данные</h3>
               <input type="text" placeholder="Ваше имя" required>
-              <input type="phone" placeholder="Ваш телефон" required>
+              <input type="phone" placeholder="Ваш телефон" pattern="[0-9]{11}" required>
             </div> 
 
             <div class="send">
               <button class="button accent" type="submit">Рассчитать стоимость</button>
               <span>Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности.</span>
             </div>
+
+            <input type="hidden" value="ПроАктив" name="project_name">
+            <input type="hidden" value="mail@mail.ru" name="admin_email">
+            <input type="hidden" value="тема письма" name="form_subject">
 
           </form>
         </div>

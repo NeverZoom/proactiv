@@ -7,11 +7,15 @@
       </div>
       <div class="col-lg-1"></div>
       <div class="col-lg-4">
-        <form action="">
+        <form action="" class="recall">
           <input type="text" required placeholder="Ваше имя">
-          <input type="phone" required placeholder="Ваш телефон">
+          <input type="phone" required placeholder="Ваш телефон" pattern="[0-9]{11}">
           <button class="button accent">Отправить</button>
           <span>Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности.</span>
+
+          <input type="hidden" value="ПроАктив" name="project_name">
+          <input type="hidden" value="mail@mail.ru" name="admin_email">
+          <input type="hidden" value="тема письма" name="form_subject">
         </form>
       </div>
       <div class="col-lg-7">
