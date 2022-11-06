@@ -1,0 +1,43 @@
+.adv__container
+  margin-bottom: 110px
+  h1
+    margin-bottom: 64px
+  .grid
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr 1fr
+    gap: 16px 16px
+    grid-auto-flow: row
+    grid-template-areas: "one two three" "one four five" "six six six"
+    .item
+      background: $skyblue
+      border-radius: 40px
+      padding: 30px 40px
+      h3
+        display: inline-block
+        color: $accent
+        margin-bottom: 26px
+        span
+          margin-bottom: 8px
+          display: block
+          font-weight: 700
+          font-size: 128px
+          line-height: 80px
+          letter-spacing: -0.04em
+
+.one
+  grid-area: one
+  display: flex
+  flex-direction: column
+  justify-content: center
+.two
+  grid-area: two
+.three
+  grid-area: three
+.four
+  grid-area: four
+.five
+  grid-area: five
+.six
+  grid-area: six
+  padding: 40px

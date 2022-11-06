@@ -1,0 +1,83 @@
+.top-line__container
+  background: $skyblue
+  padding: 20px 0
+  .top-line__container__logo
+    display: flex
+    align-items: center
+    img
+      width: 75%
+  .top-line__container__phone
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    a
+      font-weight: 600
+      font-size: 20px
+      line-height: 24px
+      color: $textcolor
+
+.top-line__menu
+  background: $light
+  padding: 25px 0
+  nav
+    width: 100%
+    height: 100%
+    ul
+      margin: 0
+      padding: 0
+      list-style: none
+      display: flex
+      align-items: center
+      justify-content: space-between
+      li
+        a
+          font-weight: 600
+          font-size: 20px
+          line-height: 24px
+          color: #1D1D1B
+          &:hover
+            color: $accent
+
+.mobile__nav
+  background: white
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100vh
+  z-index: 99
+  opacity: 0
+  pointer-events: none
+  transition: all 0.3s ease
+  .close
+    position: absolute
+    top: 10px
+    right: 10px
+  nav
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 100%
+    ul
+      margin: 0
+      padding: 0
+      list-style: none
+      display: flex
+      gap: 15px
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      li
+        a
+          font-weight: 600
+          font-size: 20px
+          line-height: 24px
+          color: #1D1D1B
+          &:hover
+            color: $accent
+
+.mnu-active
+  opacity: 1
+  pointer-events: all

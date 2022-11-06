@@ -1,0 +1,53 @@
+.mainform__container
+  h1
+    margin-bottom: 56px
+  .mainform__wrapper
+    background: $light
+    border-radius: 160px 160px 0px 0px
+    padding: 60px 0 0 0
+    form
+      .wrapper
+        margin-bottom: 42px
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          left: -26px
+          height: 100%
+          width: 4px
+          background: $secondary
+          border-radius: 4px
+        input
+          display: inline-block
+          margin-right: 16px
+          max-width: 425px
+        h3
+          margin-bottom: 24px
+      .radio
+        input
+          display: none
+        label
+          display: inline-block
+          border-radius: 40px
+          text-align: center
+          min-width: 160px
+          padding: 21px 0
+          margin-right: 16px
+          background: $skyblue
+          font-weight: 600
+          font-size: 20px
+          line-height: 0px
+          letter-spacing: -0.04em
+        label.active
+          color: white
+          background: $secondary
+
+.send
+  display: flex
+  gap: 48px
+  span
+    max-width: 424px
+    display: inline-block
+    font-weight: 400
+    font-size: 14px
+    line-height: 16px
